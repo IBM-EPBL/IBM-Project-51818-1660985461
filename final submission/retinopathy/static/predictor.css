@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+body{
+	font-family: var(--font-style);
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #9796f0 10%, #FBC7D4 100%););
+}
+.predictor-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgb(255,255,255,0.06);
+	border-left: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.3);
+	box-shadow: 0 8px 32px rgba(31,38,135,.37);
+	border-radius: 30px;
+}
+.predictor-box h2{
+	margin: 0 0 30px;
+	padding: 0;
+	color: mediumvioletred; /*#fff*/
+	text-align: center;
+}
+h3{
+	margin: 0 0 30px;
+	padding: 1px;
+	color: rgba(0, 0, 0, 0.84); /*#fff*/
+	text-align: start;
+}
+#submit{
+	padding: 10px 20px;
+	color: mediumvioletred;/*#CBBDDB*/
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	letter-spacing: 4px;
+	border: 1px solid mediumvioletred;/*#8F7CEC*/
+	margin: auto;
+  cursor: pointer;
+}
+
+#submit:hover{
+	background: mediumvioletred;/*#8F7CEC*/
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px mediumvioletred, 0 0 15px mediumvioletred, 0 0 25px mediumvioletred, 0 0 25x mediumvioletred;
+}
+.button-form{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+.file{
+  font-size: 16px;
+  background: white;
+  border-radius: 15px;
+  width: 300px;
+  outline: none;
+}
+::-webkit-file-upload-button{
+  color:white;
+  background: mediumvioletred;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  transition: .5s;
+}
+::-webkit-file-upload-button:hover{
+  background: rgba(161, 56, 253, 0.922);
+  cursor: pointer;
+}
+span{
+	color: mediumvioletred;
+}

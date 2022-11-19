@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../static/predictor.css">
+</head>
+<body>
+	<div class="predictor-box">
+		<h2>predictor</h2>
+   <div class="container" style="width:700">
+	<form action="/predict" method="POST" enctype="multipart/form-data">
+		<label for ="formfileLg" class="form-label" style="font-size:large;color: white;">Upload Image</label>
+		<div class="container">
+		<input class="file" name="file" type="file"/>
+	    </div>
+		<br>
+		<button id="submit" type="submit">predict</button>
+	</form>
+	<br>
+	<h3><span> Retinopathy classification is:</span>{{prediction}}</h3>
+   </div>
+   </div>
+</body>
+</html>
